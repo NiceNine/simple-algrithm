@@ -20,7 +20,7 @@ void quick_sort_impl(Container& c, sub_tp first,  sub_tp last)
     if(first >= last)
         return ;
     auto s_l = first - 1;
-    for(auto u_f = first, target = c[last]; u_f <= last; ++u_f) {
+    for(auto u_f = first, target = c[last]; u_f < last; ++u_f) {
         if(c[u_f] <= target)
             std::swap(c[u_f], c[++s_l]);
     }
