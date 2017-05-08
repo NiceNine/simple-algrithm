@@ -37,5 +37,3 @@ void my_print(const T& container, std::string s = "Yourt output:")
 #include "select_sort.h"
 #include "merge_sort.h"
 #include "quick_sort.h"
-#include "bfs.h"
-#include "dfs.h"
