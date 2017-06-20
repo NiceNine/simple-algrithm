@@ -1,7 +1,5 @@
-#pragma once
-
-/// file: graph.h
-/// Copyright (c) Apr 2017 Fengshan Liu(UESTC)
+#ifndef _GRAPH_H_
+#define _GRAPH_H_
 
 #include <unordered_map>
 #include <memory>
@@ -24,4 +22,6 @@ public:
 	std::unordered_map<int, std::shared_ptr<vertex>> unord_map_id_pvtx;
 	std::unordered_map<int, std::unordered_map<int, int>> unord_map_id_neibor;
 };
+
+#endif
 

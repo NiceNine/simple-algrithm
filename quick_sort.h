@@ -1,8 +1,6 @@
 #ifndef QUICK_SORT_H_INCLUDED
 #define QUICK_SORT_H_INCLUDED
 
-//#include "common.h"
-
 /// file: quick_sort.h
 /// author: lfs
 /// date: Mar 16, 2017
@@ -10,12 +8,12 @@
 /** \brief called by quick_sort
  *
  * \param container& c
- * \param sub_tp [fist, last]
+ * \param int [fist, last]
  * \return void
  *
  */
 template<typename Container>
-void quick_sort_impl(Container& c, sub_tp first,  sub_tp last)
+void quick_sort_impl(Container& c, int first,  int last)
 {
     if(first >= last)
         return ;
@@ -39,7 +37,7 @@ void quick_sort_impl(Container& c, sub_tp first,  sub_tp last)
 template<typename Container>
 void quick_sort(Container& c)
 {
-    sub_tp first = 0, last = static_cast<sub_tp>(c.size() - 1);
+    int first = 0, last = static_cast<int>(c.size() - 1);
     quick_sort_impl(c, first, last);
 }
 

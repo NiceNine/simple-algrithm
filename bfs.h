@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _BFS_H_
+#define _BFS_H_
 
 #include <climits>
 #include <queue>
@@ -41,3 +42,5 @@ void bfs(graph& g, int sc)
 		g.unord_map_id_pvtx[cur_id]->color = enum_color::BLACK;
 	}
 }
+
+#endif

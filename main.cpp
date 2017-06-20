@@ -5,16 +5,19 @@
 
 #include "common.h"
 
+#include "insert_sort.h"
+#include "select_sort.h"
+#include "merge_sort.h"
+#include "quick_sort.h"
+#include "bfs.h"
+#include "dfs.h"
+#include "graph.h"
+
 using namespace std;
 
 int main()
 {
-    vector<int > vect_int;
-    while(true) {
-        init(vect_int);
-        quick_sort(vect_int);
-        my_print(vect_int);
-    }
+   	graph g; 
     cout << "Hello world!" << endl;
     return 0;
 }

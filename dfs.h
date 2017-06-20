@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _DFS_H_
+#define _DFS_H_
 
 #include <climits>
 
@@ -43,3 +44,5 @@ void dfs_impl(graph& g, int sc)
 
 	g.unord_map_id_pvtx[sc]->color = enum_color::BLACK;
 }
+
+#endif

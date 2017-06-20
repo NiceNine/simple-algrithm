@@ -5,9 +5,6 @@
 /// author: lfs
 /// date: Mar 16, 2017
 
-/**< the type of array subscript */
-using sub_tp = int;
-
 template <typename Y>
 void init(Y& container)
 {
@@ -33,9 +30,3 @@ void my_print(const T& container, std::string s = "Yourt output:")
 }
 #endif // COMMON_H_INCLUDED
 
-#include "insert_sort.h"
-#include "select_sort.h"
-#include "merge_sort.h"
-#include "quick_sort.h"
-#include "bfs.h"
-#include "dfs.h"
